@@ -4,4 +4,4 @@
 4. Pasos de instalacion:LOS pasos de instalacion de este proyecto serian de agregar el venv y cuyo tambien bibliotecas y a las cuales tambien se agrego el o la carpetas de docs/,src/ con lo demas que es el main.py,.gitignore,LICENSE.txt,README.md y requirement.txt.
 5. Dependencias... las dependecias de este programas son los siguientes pip install requests pip nstall python-dotenv, pip list, pip freeze >requirements.txt 
 6. Autor... José Manuel García Gómez
-7. Fecha de actualizacion  25/09/2026 25/09/2026
+7. Fecha de actualizacion  25/09/2026 
