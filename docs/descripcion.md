@@ -1,0 +1,1 @@
+# El proposito del proyecto:el objetivo de la practica es que cada uno de nosotros pueda hacerlo por si mismo ser el dueño de la colaboracion y el que el otro sea el colaborador y que al final sea vicerversa 
