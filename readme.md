@@ -5,3 +5,4 @@
 5. Dependencias... las dependecias de este programas son los siguientes pip install requests pip nstall python-dotenv, pip list, pip freeze >requirements.txt 
 6. Autor... José Manuel García Gómez
 7. Fecha de actualizacion  
+Colaboracion..... Luis EduardoSoto Muñoz
