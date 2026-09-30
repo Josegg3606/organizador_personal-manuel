@@ -1,0 +1,40 @@
+1. **Repositorio local vs. Repositorio remoto**
+* **Local:** Es la copia del proyecto guardada físicamente en tu propia computadora. Te permite trabajar sin conexión a internet y probar cambios en tu entorno local.
+* **Remoto:** Es la copia alojada en un servidor en la nube (como GitHub, GitLab o Bitbucket). Sirve como respaldo centralizado y facilita la colaboración en equipo.
+
+
+2. **Commit vs. Push**
+* **`git commit`:** Guarda una captura (*snapshot*) de tus cambios preparados localmente en el historial de tu computadora. Genera un identificador único y no requiere internet.
+* **`git push`:** Sube los commits que acumulaste localmente hacia el repositorio remoto en la nube para que otros colaboradores puedan verlos.
+
+
+3. **¿Para qué sirve `.gitignore`?**
+Es un archivo de texto donde listas los archivos, carpetas o extensiones que Git debe ignorar deliberadamente. Evita que rastrees o subas archivos pesados, temporales, del sistema u operacionales que no forman parte del código fuente.
+4. **¿Por qué `.venv` no se almacena normalmente en GitHub?**
+La carpeta `.venv` contiene el entorno virtual de Python con las librerías binarias instaladas para el sistema operativo específico de tu máquina. Subirla genera repositorios innecesariamente pesados (cientos de megabytes) e ineficientes. Además, los paquetes instalados en una plataforma (ej. Windows) pueden no funcionar directamente en otra (ej. macOS o Linux).
+5. **¿Para qué sirve `requirements.txt`?**
+Es un archivo plano que lista las librerías externas de Python necesarias para el proyecto, junto con sus versiones exactas. En lugar de subir la carpeta `.venv`, subes `requirements.txt` para que cualquier desarrollador reinstale las mismas dependencias ejecutando:
+```bash
+pip install -r requirements.txt
+
+```
+
+
+6. **Fork vs. Clone**
+* **Fork:** Es una copia completa de un repositorio de GitHub que se duplica directamente dentro de tu propia cuenta de GitHub en la nube.
+* **Clone:** Es la descarga de un repositorio (ya sea el tuyo o un fork) desde GitHub hacia el disco duro de tu computadora local.
+
+
+7. **¿Por qué conviene crear una rama antes de modificar el proyecto?**
+Crear una rama aísla tu trabajo. Te permite experimentar, desarrollar nuevas características o corregir errores sin alterar la rama principal (`main`/`master`) que se encuentra funcional y estable.
+8. **¿Qué función cumple un Pull Request (PR)?**
+Es una solicitud formal en GitHub para fusionar los cambios de tu rama (o fork) en la rama principal del proyecto. Permite abrir un espacio de discusión, revisión de código y pruebas automáticas antes de integrar los cambios definitivos.
+9. **¿Qué se revisa antes de realizar un merge?**
+* Que el código cumpla con los requerimientos y no introduzca errores (*bugs*).
+* Que pase las pruebas automatizadas (si existen).
+* Que no existan **conflictos de merge** (*merge conflicts*) con la rama de destino.
+* Que se sigan las buenas prácticas de estilo de código del equipo.
+
+
+10. **¿Por qué, después del merge en GitHub, se utiliza `git pull` en el repositorio local?**
+Porque el merge une las ramas directamente en el servidor remoto de GitHub. Para traer esa nueva versión actualizada con todos los cambios integrados a la copia local de tu computadora, necesitas ejecutar `git pull`.
